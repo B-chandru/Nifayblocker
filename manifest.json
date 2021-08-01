@@ -1,0 +1,25 @@
+{
+"manifest_version": 2 ,
+"name":"NIFAY BLOCKER",
+"version":"1.0",
+"description":"it will block all the ott platforms and some social media's",
+"icons":{
+    "128":"images/logo128.png",
+    "48":"images/logo48.png",
+    "16":"images/logo16.png"
+},
+"browser_action":{
+    "default_icon":{
+        "16":"images/logo16.png",
+        "48":"images/logo48.png",
+        "128":"images/logo128.png"
+        },
+    "default_title":"it will block all the ott platforms and some social media's"
+},
+"content_scripts":[
+    {
+    "matches":["<all_urls>"],
+    "js":["block.js"]
+    }
+]
+}
